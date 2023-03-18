@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image:  linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+    width: 40%;
+    margin: auto;
+
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.14);
+    -webkit-backdrop-filter: blur(7.3px);
+    backdrop-filter: blur(7.3px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 2rem;
+}
+
+form > #task-input{
+    width: 65%;
+    height: 60%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding-left: .5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#task-input::placeholder {
+    opacity: 1;
+}
+
+form > #add-task-btn {
+    width: 25%;
+    height: 60%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+    background:#004d7adb;
+    margin-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    max-width: 50vw;
+    width: max-content;
+    margin: auto;
+    
+}
+
+.todo-list {
+    max-width: 95%;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: .8rem;
+    padding: 1rem;
+
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.14);
+    -webkit-backdrop-filter: blur(7.3px);
+    backdrop-filter: blur(7.3px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.todo-item {
+    padding: .4rem .5rem;
+    line-height: 1.5rem;
+    margin-right: 1rem; 
+    width: 70%;
+    list-style-type: none;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    min-height: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.todo > button {
+    width: 5rem;
+    height: 2rem;
+    margin-left: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#add-task-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+button:hover, #add-task-btn:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.todo > .done-btn {
+    background-color:#008793;
+    color: white;
+}
+
+.todo > .delete-btn {
+    background-color: red;
+    color: white;
+
+}
+
+.see-more-btn {
+    position: absolute;
+    top: 2rem;
+    left: 24rem;
+}
+
+.done {
+    text-decoration: line-through;
+    /* background-color: rgba(0, 127, 85, 0.8); */
+    color: rgba(255, 255, 255, 0.597);
+}
+
+.delete-task {
+    transform: skewX(100);
+    transition: all .4 ease-in-out;
+}
+
+.see-more {
+    overflow: visible;
+    white-space: normal;
+}
+
+
+
+
+
+
